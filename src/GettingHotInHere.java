@@ -21,11 +21,10 @@ public class GettingHotInHere {
 
         System.out.println(number +"°F");
 
-        float hankGreene = (number - 32.0f) * (5.0f/9.0f);
+        float hankGreene = ( (float) (number - 32) ) * (5.0f/9.0f);
         System.out.printf("%f" +"°C%n", hankGreene);
 
-        float iLostMyGoatToALilyPad = (int) hankGreene;
-        System.out.println(iLostMyGoatToALilyPad+"°C");
+        System.out.println( (int) hankGreene+"°C");
 
         float winterIsNotComing = hankGreene + 2.0f;
         System.out.printf("If it were 2°C warmer be: %f°C%n", winterIsNotComing);
